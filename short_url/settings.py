@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from socket import gethostname
-import os, environ, djang_heroku
+import os, environ, django_heroku
 
 hostname = gethostname()
 
