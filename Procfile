@@ -1,1 +1,1 @@
-web: gunicorn shorturl33.wsgi
+web: gunicorn shorturl33.wsgi : app --log-file -
