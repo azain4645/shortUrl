@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="d-flex align-items-center justify-content-center" style='height: 100vh;'>
+    <div class="text-center">
+        <h1>URL短縮サービス</h1>
+
+        <form action="{% url 'urls:index' %}" method="POST">
+            {% csrf_token %}
+            <div class='mb-2'>
+            <!-- ：{{ form.url }} -->
+            <input style="width:100%;" type="url" name="url" id="id_url" maxlength="200" required placeholder="短縮したいURL">
+            </div>
+            <input class="btn btn-success" type="submit" value="短縮化">
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+<div class="d-flex align-items-center justify-content-center" style='height: 100vh;'>
+    <div class="text-center">
+        <h1>URL短縮サービス</h1>
+        <h3>短縮後: <a href="/{{ code }}">http://127.0.0.1:8000/{{ code }}</a></p>
+        
+        <a href="../" class="btn btn-primary">別のURLを短縮する</a>
+    </div>
+
+</div>
+
+{% endblock %}
