@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-#MACBOOKAIR-1A29
 
 from pathlib import Path
 from socket import gethostname
@@ -80,7 +79,7 @@ WSGI_APPLICATION = 'short_url.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-if "COMPUTER-NAME" in hostname:
+if "MACBOOKAIR-1A29" in hostname:
     # デバッグ環境
     # DEBUG = True 
     DATABASES = {
