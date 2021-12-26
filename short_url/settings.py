@@ -76,10 +76,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'short_url.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-if "MACBOOKAIR-1A29" in hostname:
+if "asaimasamichinoMacBook-Air.local" == hostname:
     # デバッグ環境
     # DEBUG = True 
     DATABASES = {
